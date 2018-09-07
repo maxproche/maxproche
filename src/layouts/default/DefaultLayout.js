@@ -1,11 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// Components
+import Header from 'roots/nav/header/Header';
 
 class DefaultLayout extends React.Component {
 	render() {
 		return (
 			<div>
-				<p>Default Layout working correctly</p>
+				<Header />
 			</div>
 		);
 	}

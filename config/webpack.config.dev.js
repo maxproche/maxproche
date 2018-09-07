@@ -19,6 +19,7 @@ const publicPath = '/';
 const publicUrl = '';
 // Get environment variables to inject into our app.
 const env = getClientEnvironment(publicUrl);
+const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
@@ -83,6 +84,8 @@ module.exports = {
 		extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
 		alias: {
 			layouts: path.resolve('src/layouts'),
+			common: path.resolve('src/components/common'),
+			roots: path.resolve('src/components/roots'),
 			// Support React Native Web
 			// https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
 			'react-native': 'react-native-web'
@@ -159,7 +162,9 @@ module.exports = {
 							{
 								loader: require.resolve('css-loader'),
 								options: {
-									importLoaders: 1
+									importLoaders: 1,
+									modules: true,
+									localIdentName: '[name]__[local]__[hash:base64:5]'
 								}
 							},
 							{
