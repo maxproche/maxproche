@@ -5,6 +5,7 @@
 .headerButtonLight:hover {
 	color: lightgray;
 	cursor: pointer;
+	border-bottom: 1px solid gray;
 }
 
 .headerButtonDark {
@@ -14,4 +15,5 @@
 .headerButtonDark:hover {
 	color: white;
 	cursor: pointer;
+	border-bottom: 1px solid white;
 }

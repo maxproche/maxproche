@@ -87,6 +87,8 @@ module.exports = {
 			common: path.resolve('src/components/common'),
 			roots: path.resolve('src/components/roots'),
 			assets: path.resolve('src/assets'),
+			utils: path.resolve('src/utilities'),
+			store: path.resolve('src/store'),
 			// Support React Native Web
 			// https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
 			'react-native': 'react-native-web'
