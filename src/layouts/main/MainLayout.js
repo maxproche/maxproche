@@ -17,8 +17,7 @@ class MainLayout extends React.Component {
 	}
 
 	render() {
-		const { detailsPageName } = this.props;
-		const showBottomView = !!detailsPageName;
+		const { pageName, detailsPageName, showBottomView } = this.props;
 		return (
 			<div>
 				<FullImageBackground>
@@ -33,7 +32,8 @@ class MainLayout extends React.Component {
 
 const _mapStateToProps = (state) => ({
 	pageName: state.page.pageName,
-	detailsPageName: state.page.detailsPageName
+	detailsPageName: state.page.detailsPageName,
+	showBottomView: state.page.showBottomView
 });
 
 export default connect(_mapStateToProps)(MainLayout);
