@@ -10,7 +10,7 @@ const UNIVERSITY = 'University';
 // Experience
 const SOFTWARE_JOBS = 'Software Jobs';
 const UNIVERSITY_JOBS = 'University Jobs';
-const OTHER_JOBS = 'Other';
+const OTHER_JOBS = 'Other Jobs';
 
 export default {
 	CONTACT,

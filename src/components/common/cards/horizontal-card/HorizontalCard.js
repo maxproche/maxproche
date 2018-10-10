@@ -5,7 +5,6 @@ import styles from './HorizontalCard.css';
 
 const HorizontalCard = (props) => {
 	const { imageSrc, title, description, date, details, extra, link } = props;
-	debugger;
 	return (
 		<a className={styles.anchor} href={link} target="_blank">
 			<div className={styles.cardContainer}>
@@ -22,7 +21,7 @@ const HorizontalCard = (props) => {
 					</div>
 
 					<div className={styles.details}>
-						<ul>{details.map((detail) => <li>{detail}</li>)}</ul>
+						<ul>{details.map((detail) => <li className={styles.detail}>{detail}</li>)}</ul>
 					</div>
 
 					<div className={styles.extra}>{extra}</div>

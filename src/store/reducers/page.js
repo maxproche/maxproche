@@ -9,16 +9,11 @@ const defaultState = {
 };
 
 const showBottomView = (pageName, detailsPageName) => {
-	console.log('************');
-	console.log(pageName);
-	console.log(detailsPageName);
 	if (!detailsPageName) {
-		console.log('1');
 		return false;
 	}
 
 	if (pageName === PageNames.HOME) {
-		console.log('2');
 		return false;
 	}
 	if (
@@ -26,15 +21,12 @@ const showBottomView = (pageName, detailsPageName) => {
 		detailsPageName === DetailsPageNames.RESUME ||
 		detailsPageName === DetailsPageNames.SOCIAL
 	) {
-		console.log('3');
 		return false;
 	}
-	console.log('4');
 	return true;
 };
 
 export default (state = defaultState, action) => {
-	console.log(action);
 	switch (action.type) {
 		case ActionTypes.UPDATE_PAGE_NAME:
 			return {

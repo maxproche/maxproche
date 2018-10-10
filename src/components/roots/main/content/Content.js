@@ -7,6 +7,8 @@ import PageNames from 'utils/constants/page-names/PageNames';
 import DetailsPageNames from 'utils/constants/details-page-names/DetailsPageNames';
 // Components
 import ContentButton from './content-button/ContentButton';
+// Helpers
+import classNames from 'classnames';
 // Redux
 import { connect } from 'react-redux';
 // Styling
@@ -16,11 +18,11 @@ class Content extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			hover: false,
-			content: 'contact'
+			hover: false
 		};
 	}
 
+	/* ========================= HELPERS  ========================= */
 	homeButtons = [
 		{
 			title: DetailsPageNames.CONTACT
@@ -53,13 +55,13 @@ class Content extends React.Component {
 			title: DetailsPageNames.OTHER_JOBS
 		}
 	];
-
 	toggleHover = () => {
 		this.setState({
 			hover: !this.state.hover
 		});
 	};
 
+	/* ========================= CONTENT BUTTONS ========================= */
 	renderContentButtons = () => {
 		switch (this.props.pageName) {
 			case PageNames.HOME:
@@ -73,30 +75,23 @@ class Content extends React.Component {
 		}
 	};
 
-	_handleContentButtonClick = (detailsPageName) => {
-		this.props.updateDetailsPageName(detailsPageName);
-	};
-
 	_renderContentButtons = (buttons) => (
 		<React.Fragment>
-			{buttons.map((button) => (
-				<ContentButton
-					title={button.title}
-					lightMode={!this.state.hover}
-					onClick={() => this._handleContentButtonClick(button.title)}
-				/>
-			))}
+			{buttons.map((button, index) => {
+				return (
+					<ContentButton
+						key={index}
+						title={button.title}
+						lightMode={!this.state.hover}
+						onClick={() => this._handleContentButtonClick(button.title)}
+					/>
+				);
+			})}
 		</React.Fragment>
 	);
 
-	renderContent = () => {
-		let innerContent;
-		switch (this.state.content) {
-			case null:
-				return null;
-			case 'contact':
-				return <p>Contact Me </p>;
-		}
+	_handleContentButtonClick = (detailsPageName) => {
+		this.props.updateDetailsPageName(detailsPageName);
 	};
 
 	render() {
@@ -107,7 +102,6 @@ class Content extends React.Component {
 				onMouseLeave={this.toggleHover}
 			>
 				{this.renderContentButtons()}
-				{this.renderContent()}
 			</div>
 		);
 	}

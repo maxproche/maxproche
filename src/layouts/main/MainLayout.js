@@ -4,6 +4,7 @@ import PageNames from 'utils/constants/page-names/PageNames';
 // Components
 import Header from 'roots/main/header/Header';
 import Content from 'roots/main/content/Content';
+import DetailsPage from 'roots/main/details/DetailsPage';
 import Breakpoint from 'common/breakpoint/Breakpoint';
 import FullImageBackground from 'common/full-image-background/FullImageBackground';
 // Redux
@@ -19,12 +20,22 @@ class MainLayout extends React.Component {
 	render() {
 		const { pageName, detailsPageName, showBottomView } = this.props;
 		return (
-			<div>
+			<div className={styles.container}>
 				<FullImageBackground>
-					<Header />
-					<Content />
+					<Breakpoint device="desktop">
+						<Header />
+						<Content />
+					</Breakpoint>
+					<Breakpoint device="tablet">
+						<Header />
+						<Content />
+					</Breakpoint>
+					<Breakpoint device="phone">
+						<Header />
+						<Content />
+					</Breakpoint>
 				</FullImageBackground>
-				{showBottomView ? <div className={styles.bottomView}>{detailsPageName}</div> : null}
+				<DetailsPage shouldDisplay={showBottomView} />
 			</div>
 		);
 	}

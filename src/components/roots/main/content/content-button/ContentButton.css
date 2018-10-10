@@ -1,4 +1,4 @@
-.contentButtonLight {
+.contentButton {
 	padding: 10px;
 	font-size: 20px;
 	border: 1px solid white;
@@ -10,25 +10,38 @@
 	border-radius: 5px;
 }
 
-.contentButtonLight:hover {
+.contentButton:hover {
 	color: gray;
 	border-color: gray;
 	cursor: pointer;
 }
 
 .contentButtonDark {
-	padding: 10px;
-	font-size: 20px;
 	border: 1px solid gray;
 	color: gray;
-
-	margin: 10px;
-	width: 30%;
-	border-radius: 5px;
 }
 
 .contentButtonDark:hover {
 	color: white;
 	border-color: white;
 	cursor: pointer;
+}
+
+.auxiliaryContact {
+	color: white;
+}
+
+.auxiliarySocial {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 30%;
+	color: white;
+}
+
+.resumeLink {
+	color: inherit;
+	display: block;
+	text-decoration: none;
 }

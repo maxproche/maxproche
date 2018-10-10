@@ -13,7 +13,6 @@ import styles from './Header.css';
 
 class Header extends React.Component {
 	constructor(props) {
-		console.log(PageActions);
 		super(props);
 		this.state = {
 			hover: false

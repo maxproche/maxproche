@@ -9,10 +9,11 @@ const breakpoints = {
 };
 
 const Breakpoint = (props) => {
-	const breakpoint = breakpoints[props.name] || breakpoints.desktop;
+	const { device, children } = props;
+	const breakpoint = breakpoints[device] || breakpoints.desktop;
 	return (
 		<MediaQuery {...props} query={breakpoint}>
-			{props.children}
+			{children}
 		</MediaQuery>
 	);
 };

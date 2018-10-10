@@ -55,9 +55,13 @@
 }
 
 /** Details */
-.details: {
+.details {
 	font-size: inherit;
 	flex: 6;
+}
+
+.detail {
+	margin: 0 0 5px 0 !important;
 }
 
 /** Extra */

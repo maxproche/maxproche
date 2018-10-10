@@ -1,6 +1,6 @@
 export default {
 	HOME: 'Home',
 	EDUCATION: 'Education',
-	EXPERIENCE: 'Work Experience',
+	EXPERIENCE: 'Experience',
 	PROJECTS: 'Projects'
 };
