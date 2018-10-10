@@ -9,7 +9,7 @@ const HorizontalCard = (props) => {
 		<a className={styles.anchor} href={link} target="_blank">
 			<div className={styles.cardContainer}>
 				<div className={styles.image}>
-					<img src={imageSrc} />
+					<img src={imageSrc} height={150} width={150} />
 				</div>
 				<div className={styles.cardInfo}>
 					<div className={styles.header}>

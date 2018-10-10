@@ -1,9 +1,11 @@
-import GithubLogo from 'assets/LinkedIn-Logo.png';
+import WYLogo from 'assets/WY-Logo.jpg';
+import PEALogo from 'assets/PEA-Logo.png';
+import AMHLogo from 'assets/AMH-Logo.png';
 
 const HIGH_SCHOOL = {
 	schools: [
 		{
-			imageSrc: GithubLogo,
+			imageSrc: PEALogo,
 			title: 'Phillips Exeter Academy',
 			description: 'Exeter, NH',
 			date: "'15",
@@ -16,7 +18,7 @@ const HIGH_SCHOOL = {
 				'https://www.businessinsider.com/best-private-high-schools-in-america-2017-8#2-phillips-exeter-academy-24'
 		},
 		{
-			imageSrc: GithubLogo,
+			imageSrc: WYLogo,
 			title: 'Whitney M. Young Magnet High School',
 			description: 'Chicago, IL',
 			date: "'14",
@@ -35,7 +37,7 @@ const HIGH_SCHOOL = {
 const UNIVERSITY = {
 	schools: [
 		{
-			imageSrc: GithubLogo,
+			imageSrc: AMHLogo,
 			title: 'Amherst College',
 			description: 'Amherst, MA',
 			date: "'19",

@@ -58,6 +58,7 @@
 .details {
 	font-size: inherit;
 	flex: 6;
+	border-bottom: 1px solid gray;
 }
 
 .detail {

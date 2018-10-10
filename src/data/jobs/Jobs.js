@@ -1,9 +1,14 @@
-import GithubLogo from 'assets/LinkedIn-Logo.png';
+import AMHLogo from 'assets/AMH-Logo.png';
+import TALogo from 'assets/TA-Logo.png';
+import ThinkBioLogo from 'assets/ThinkBio-Logo.jpg';
+import DHLogo from 'assets/DH-Logo.jpg';
+import SCLogo from 'assets/SC-Logo.png';
+import RCLogo from 'assets/RC-Logo.png';
 
 const SOFTWARE_JOBS = {
 	jobs: [
 		{
-			imageSrc: GithubLogo,
+			imageSrc: TALogo,
 			title: 'TripAdvisor',
 			description: 'Needham, MA',
 			date: "Summer '18",
@@ -16,7 +21,7 @@ const SOFTWARE_JOBS = {
 			link: 'https://www.tripadvisor.com/'
 		},
 		{
-			imageSrc: GithubLogo,
+			imageSrc: ThinkBioLogo,
 			title: 'Think BioSolution',
 			description: 'Dublin, Ireland',
 			date: "Summer '17",
@@ -33,7 +38,7 @@ const SOFTWARE_JOBS = {
 const UNIVERSITY_JOBS = {
 	jobs: [
 		{
-			imageSrc: GithubLogo,
+			imageSrc: AMHLogo,
 			title: 'Amherst College Department of Mathematics',
 			description: 'Grading Assistant',
 			date: "Summer '17 - Present",
@@ -45,7 +50,7 @@ const UNIVERSITY_JOBS = {
 			extra: 'Skills: Mutlivarible Calculus, Calculus, Math, Time Management'
 		},
 		{
-			imageSrc: GithubLogo,
+			imageSrc: AMHLogo,
 			title: 'Amherst College Department of Computer Science',
 			description: 'Teaching Assistant',
 			date: "Summer '17 - Spring '18",
@@ -55,7 +60,7 @@ const UNIVERSITY_JOBS = {
 			extra: 'Skills: Mutlivarible Calculus, Calculus, Math, Time Management'
 		},
 		{
-			imageSrc: GithubLogo,
+			imageSrc: AMHLogo,
 			title: 'Amherst College Athletics',
 			description: 'Event Staff',
 			date: "Fall '15 - Present",
@@ -71,7 +76,7 @@ const UNIVERSITY_JOBS = {
 const OTHER_JOBS = {
 	jobs: [
 		{
-			imageSrc: GithubLogo,
+			imageSrc: DHLogo,
 			title: 'Delaney Hockey',
 			description: 'Coaching Assistant',
 			date: "'10 - Present",
@@ -80,10 +85,11 @@ const OTHER_JOBS = {
 				'Discussed the best training practices and drills amongst other coaches',
 				'Worked when called upon, usually consisting of 2-3 weeks of work at a time'
 			],
-			extra: 'Illinois'
+			extra: 'Illinois',
+			link: 'http://www.delaneyhockey.com/'
 		},
 		{
-			imageSrc: GithubLogo,
+			imageSrc: SCLogo,
 			title: 'Sage Corps',
 			description: 'Sage Fellow',
 			date: "Summer '17",
@@ -91,10 +97,11 @@ const OTHER_JOBS = {
 				'Sage Corps is a selective global entrepreneurship program that sends top college students (Fellows) to study and intern abroad with tech startups',
 				'Fellows spend their days alongside CEOs, CTOs, and COOs tackling real problems and building impactful solutions.'
 			],
-			extra: 'Dublin, Ireland'
+			extra: 'Dublin, Ireland',
+			link: 'https://sagecorps.com/'
 		},
 		{
-			imageSrc: GithubLogo,
+			imageSrc: RCLogo,
 			title: 'Camp Counselor/Hockey Coach',
 			description: 'Robert Crown Camp',
 			date: "Summers '12 & '13",
