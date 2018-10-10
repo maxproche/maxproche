@@ -1,0 +1,68 @@
+.anchor {
+	text-decoration: none;
+	color: black;
+}
+
+.cardContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 15px;
+}
+
+.image {
+	flex: 1;
+	align-self: center;
+	text-align: center;
+}
+
+.cardInfo {
+	font-size: inherit;
+	padding: 10px 0;
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+/** Header */
+.header {
+	font-size: inherit;
+	flex: 2;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;
+	flex: 6;
+}
+
+.description {
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: gray;
+}
+
+.date {
+	font-size: inherit;
+	flex: 1;
+	color: gray;
+}
+
+/** Details */
+.details: {
+	font-size: inherit;
+	flex: 6;
+}
+
+/** Extra */
+.extra {
+	font-size: inherit;
+	flex: 2;
+	color: gray;
+}
