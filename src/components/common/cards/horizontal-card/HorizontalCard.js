@@ -8,8 +8,8 @@ const HorizontalCard = (props) => {
 	return (
 		<a className={styles.anchor} href={link} target="_blank">
 			<div className={styles.cardContainer}>
-				<div className={styles.image}>
-					<img src={imageSrc} height={150} width={150} />
+				<div className={styles.imageContainer}>
+					<img className={styles.image} src={imageSrc} height={150} width={150} />
 				</div>
 				<div className={styles.cardInfo}>
 					<div className={styles.header}>

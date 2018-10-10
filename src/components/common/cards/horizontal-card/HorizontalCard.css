@@ -1,3 +1,4 @@
+/** Container */
 .anchor {
 	text-decoration: none;
 	color: black;
@@ -9,13 +10,19 @@
 	justify-content: flex-start;
 	font-size: 15px;
 }
-
-.image {
+/** Left */
+.imageContainer {
 	flex: 1;
 	align-self: center;
 	text-align: center;
 }
 
+.image {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/** Right */
 .cardInfo {
 	font-size: inherit;
 	padding: 10px 0;
