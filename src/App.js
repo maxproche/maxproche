@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 // Layouts
-import DefaultLayout from 'layouts/default/DefaultLayout';
+import MainLayout from 'layouts/main/MainLayout';
 
 class App extends Component {
 	render() {
-		return <DefaultLayout />;
+		return <MainLayout />;
 	}
 }
 

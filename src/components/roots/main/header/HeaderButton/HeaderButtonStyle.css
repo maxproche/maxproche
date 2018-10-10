@@ -1,0 +1,17 @@
+.headerButtonLight {
+	color: white;
+}
+
+.headerButtonLight:hover {
+	color: lightgray;
+	cursor: pointer;
+}
+
+.headerButtonDark {
+	color: gray;
+}
+
+.headerButtonDark:hover {
+	color: white;
+	cursor: pointer;
+}
