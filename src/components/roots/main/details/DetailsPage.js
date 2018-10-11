@@ -8,6 +8,7 @@ import DetailsPageNames from 'utils/constants/details-page-names/DetailsPageName
 // Data
 import EducationData from 'data/education/Education';
 import JobsData from 'data/jobs/Jobs';
+import ProjectsData from 'data/projects/Projects';
 // Redux
 import { connect } from 'react-redux';
 // Styling
@@ -46,6 +47,15 @@ class DetailsPage extends React.Component {
 				break;
 			case DetailsPageNames.OTHER_JOBS:
 				data = JobsData.OTHER_JOBS.jobs;
+				break;
+			case DetailsPageNames.AI:
+				data = ProjectsData.AI.projects;
+				break;
+			case DetailsPageNames.MOBILE:
+				data = ProjectsData.MOBILE.projects;
+				break;
+			case DetailsPageNames.WEB:
+				data = ProjectsData.WEB.projects;
 				break;
 			default:
 				return null;

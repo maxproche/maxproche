@@ -55,6 +55,19 @@ class Content extends React.Component {
 			title: DetailsPageNames.OTHER_JOBS
 		}
 	];
+
+	projectsButtons = [
+		{
+			title: DetailsPageNames.AI
+		},
+		{
+			title: DetailsPageNames.MOBILE
+		},
+		{
+			title: DetailsPageNames.WEB
+		}
+	];
+
 	toggleHover = () => {
 		this.setState({
 			hover: !this.state.hover
@@ -70,6 +83,8 @@ class Content extends React.Component {
 				return this._renderContentButtons(this.educationButtons);
 			case PageNames.EXPERIENCE:
 				return this._renderContentButtons(this.experienceButtons);
+			case PageNames.PROJECTS:
+				return this._renderContentButtons(this.projectsButtons);
 			default:
 				return null;
 		}

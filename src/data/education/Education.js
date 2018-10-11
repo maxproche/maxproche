@@ -13,7 +13,7 @@ const HIGH_SCHOOL = {
 				'Studied as a post-graduate boarding student at Phillips Exeter Academy before attending Amherst College',
 				"Member of the Phillips Exeter Academy Men's Ice Hockey Team"
 			],
-			extra: '',
+			extra: 'Ranked #2 Best Private School in America',
 			link:
 				'https://www.businessinsider.com/best-private-high-schools-in-america-2017-8#2-phillips-exeter-academy-24'
 		},
@@ -27,7 +27,7 @@ const HIGH_SCHOOL = {
 				"Member of the inaugural Whitney Young Men's Lacrosse Team",
 				"Lacrosse Chicago City Champion '14"
 			],
-			extra: '',
+			extra: 'Top 30 Ranked Public High School in America',
 			link:
 				'https://www.businessinsider.com/best-public-high-schools-in-america-2017-8#6-whitney-m-young-magnet-high-school-chicago-il-20'
 		}
