@@ -13,7 +13,7 @@ const UNIVERSITY_JOBS = 'University Jobs';
 const OTHER_JOBS = 'Other Experiences';
 
 // Projects
-const AI = 'A.I. Projects';
+const SCHOOL = 'School Projects';
 const MOBILE = 'Mobile Projects';
 const WEB = 'Web Projects';
 
@@ -26,7 +26,7 @@ export default {
 	SOFTWARE_JOBS,
 	UNIVERSITY_JOBS,
 	OTHER_JOBS,
-	AI,
+	SCHOOL,
 	MOBILE,
 	WEB
 };

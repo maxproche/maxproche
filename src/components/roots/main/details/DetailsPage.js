@@ -48,8 +48,8 @@ class DetailsPage extends React.Component {
 			case DetailsPageNames.OTHER_JOBS:
 				data = JobsData.OTHER_JOBS.jobs;
 				break;
-			case DetailsPageNames.AI:
-				data = ProjectsData.AI.projects;
+			case DetailsPageNames.SCHOOL:
+				data = ProjectsData.SCHOOL.projects;
 				break;
 			case DetailsPageNames.MOBILE:
 				data = ProjectsData.MOBILE.projects;

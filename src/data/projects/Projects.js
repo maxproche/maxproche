@@ -5,12 +5,12 @@ import QuasarLogo from 'assets/Quasar-Logo.png';
 import MeetumLogo from 'assets/Meetum-Logo.png';
 import CodingLogo from 'assets/Coding-Logo.jpg';
 
-const AI = {
+const SCHOOL = {
 	projects: [
 		{
 			imageSrc: PacmanLogo,
-			title: 'Pacman - Capture The Flag Tournament',
-			description: 'Final project for COSC-243: Capture The Flag Tournament',
+			title: 'A.I. Pacman - Capture The Flag Tournament',
+			description: 'Final project for COSC-243 (A.I.): Capture The Flag Tournament',
 			date: "Fall '17",
 			details: [
 				'Impemented Particle Filtering to detect the probable location of opposing ghosts',
@@ -19,6 +19,17 @@ const AI = {
 			],
 			extra: 'Skills: Python, Q-Learning, Particle Filtering',
 			link: 'https://github.com/maxproche/AI_CTF'
+		},
+		{
+			imageSrc: PacmanLogo,
+			title: 'A.I.: Pacman - Particle Filtering',
+			description: 'Project for COSC-243 (A.I.): Reinforcement Learning',
+			date: "Fall '17",
+			details: [
+				'Implemented particle filtering to detect where ghosts were given an undeterministic environment'
+			],
+			extra: 'Skills: Python, Q-Learning',
+			link: 'http://ai.berkeley.edu/tracking.html'
 		}
 	]
 };
@@ -119,7 +130,7 @@ const WEB = {
 };
 
 export default {
-	AI,
+	SCHOOL,
 	MOBILE,
 	WEB
 };

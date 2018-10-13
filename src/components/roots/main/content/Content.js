@@ -58,7 +58,7 @@ class Content extends React.Component {
 
 	projectsButtons = [
 		{
-			title: DetailsPageNames.AI
+			title: DetailsPageNames.SCHOOL
 		},
 		{
 			title: DetailsPageNames.MOBILE

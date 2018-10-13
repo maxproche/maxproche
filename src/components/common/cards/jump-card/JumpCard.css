@@ -1,13 +1,17 @@
 .card {
 	width: 100%;
-	margin: 20px auto;
 	background-color: white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
+	z-index: 0;
+	position: relative;
+	border-bottom: 1px solid gray;
 }
 
 .card:hover {
+	position: relative;
+	padding: 1px;
+	z-index: 1;
 	background-color: white;
-	box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 }
