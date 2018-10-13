@@ -9,6 +9,8 @@ import Breakpoint from 'common/breakpoint/Breakpoint';
 import FullImageBackground from 'common/full-image-background/FullImageBackground';
 // Redux
 import { connect } from 'react-redux';
+// Screens
+import MobileScreen from 'screens/mobile/MobileScreen';
 // Styling
 import styles from './MainLayout.css';
 
@@ -21,6 +23,7 @@ class MainLayout extends React.Component {
 		const { pageName, detailsPageName, showBottomView } = this.props;
 		return (
 			<div className={styles.container}>
+				{/** Main Section */}
 				<FullImageBackground>
 					<Breakpoint device="desktop">
 						<Header />
@@ -31,11 +34,16 @@ class MainLayout extends React.Component {
 						<Content />
 					</Breakpoint>
 					<Breakpoint device="phone">
-						<Header />
-						<Content />
+						<MobileScreen />
 					</Breakpoint>
 				</FullImageBackground>
-				<DetailsPage shouldDisplay={showBottomView} />
+				{/** Details Section */}
+				<Breakpoint device="desktop">
+					<DetailsPage shouldDisplay={showBottomView} />
+				</Breakpoint>
+				<Breakpoint device="tablet">
+					<DetailsPage shouldDisplay={showBottomView} />
+				</Breakpoint>
 			</div>
 		);
 	}

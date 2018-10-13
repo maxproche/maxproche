@@ -43,10 +43,10 @@ class ContentButton extends React.Component {
 			return (
 				<div className={styles.auxiliarySocial}>
 					<a href={Links.GITHUB_URL} target="_blank">
-						<img src={GithubLogo} />
+						<img src={GithubLogo} alt="Github" />
 					</a>
 					<a href={Links.LINKEDIN_URL} target="_blank">
-						<img src={LinkedInLogo} />
+						<img src={LinkedInLogo} alt="LinkedIn" />
 					</a>
 				</div>
 			);

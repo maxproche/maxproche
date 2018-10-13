@@ -90,6 +90,7 @@ module.exports = {
 			utils: path.resolve('src/utilities'),
 			store: path.resolve('src/store'),
 			data: path.resolve('src/data'),
+			screens: path.resolve('src/screens'),
 			// Support React Native Web
 			// https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
 			'react-native': 'react-native-web'

@@ -28,7 +28,7 @@ const SCHOOL = {
 			details: [
 				'Implemented particle filtering to detect where ghosts were given an undeterministic environment'
 			],
-			extra: 'Skills: Python, Q-Learning',
+			extra: 'Skills: Python, A.I.',
 			link: 'http://ai.berkeley.edu/tracking.html'
 		}
 	]

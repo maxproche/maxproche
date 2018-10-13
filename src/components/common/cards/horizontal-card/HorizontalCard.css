@@ -5,6 +5,7 @@
 }
 
 .cardContainer {
+	padding: 5px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -57,7 +58,7 @@
 }
 
 .date {
-	font-size: inherit;
+	font-size: 12px;
 	flex: 1;
 	color: gray;
 	float: right;
